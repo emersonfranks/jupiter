@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jupiter.api:
+    image: ${DOCKER_REGISTRY}jupiterapi
+    build:
+      context: .
+      dockerfile: Jupiter.Api/Dockerfile
