@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jupiter.Api.Controllers
+namespace DeveloperTools.Api.Controllers
 {
     /// <summary>
     ///     All things about dates.
