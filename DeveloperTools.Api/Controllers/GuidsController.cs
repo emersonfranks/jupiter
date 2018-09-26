@@ -15,9 +15,12 @@ namespace DeveloperTools.Api.Controllers
         /// </summary>
         /// <returns>A new GUID.</returns>
         [HttpGet]
-        public IActionResult Get()
+        //[Route("api/[controller]/{upperCase}/{separators}")]
+        public IActionResult GetWithQuery(bool upperCase = false, bool dashes = false)
         {
-            return this.Ok(Guid.NewGuid());
+            var guid = dashes ? Guid.NewGuid().ToString() : Guid.NewGuid().ToString("N");
+
+            return this.Ok(upperCase ? guid.ToUpper() : guid);
         }
     }
 }

@@ -5,7 +5,6 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>b68670e7-9239-43cb-925c-1211b2de8add</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
     <DockerServiceName>developertools.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
