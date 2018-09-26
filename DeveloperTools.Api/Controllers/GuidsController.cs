@@ -15,7 +15,6 @@ namespace DeveloperTools.Api.Controllers
         /// </summary>
         /// <returns>A new GUID.</returns>
         [HttpGet]
-        //[Route("api/[controller]/{upperCase}/{separators}")]
         public IActionResult GetWithQuery(bool upperCase = false, bool dashes = false)
         {
             var guid = dashes ? Guid.NewGuid().ToString() : Guid.NewGuid().ToString("N");
