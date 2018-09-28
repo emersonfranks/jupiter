@@ -20,5 +20,16 @@ namespace DeveloperTools.Api.Controllers
         {
             return this.Ok(DateTime.Today.DayOfYear);
         }
+
+        /// <summary>
+        ///     GET ~/date/time/utcnow
+        /// </summary>
+        /// <returns>The current UTC date time.</returns>
+        [Route("Time/UtcNow")]
+        [HttpGet]
+        public IActionResult GetUtcDateTime()
+        {
+            return this.Ok(DateTime.UtcNow);
+        }
     }
 }
