@@ -13,8 +13,8 @@ namespace DeveloperTools.Api.Controllers
         /// <summary>
         ///     GET ~/date/day/number
         /// </summary>
-        /// <returns></returns>
-        [Route("day/number")]
+        /// <returns>The day number.</returns>
+        [Route("Day/Number")]
         [HttpGet]
         public IActionResult Get()
         {

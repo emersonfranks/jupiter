@@ -8,8 +8,15 @@ using Swashbuckle.AspNetCore.Swagger;
 
 namespace DeveloperTools.Api
 {
+    /// <summary>
+    ///     Encapsulates the app start up process.
+    /// </summary>
     public class Startup
     {
+        /// <summary>
+        ///     Starts the app.
+        /// </summary>
+        /// <param name="configuration">The configuration.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -17,7 +24,10 @@ namespace DeveloperTools.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        ///  This method gets called by the runtime. Use this method to add services to the container.
+        /// </summary>
+        /// <param name="services">The services.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -38,10 +48,14 @@ namespace DeveloperTools.Api
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        /// <summary>
+        ///     This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// </summary>
+        /// <param name="app">The app.</param>
+        /// <param name="environment">The environment</param>
+        public void Configure(IApplicationBuilder app, IHostingEnvironment environment)
         {
-            if (env.IsDevelopment())
+            if (environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
