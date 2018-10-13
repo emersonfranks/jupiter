@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  developertools.api:
+  jupiter.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:

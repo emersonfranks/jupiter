@@ -1,14 +1,14 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DeveloperTools.Api.Controllers
+namespace Jupiter.Api.Controllers
 {
     /// <summary>
     ///     All things GUID.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    public class GuidsController : ControllerBase
+    public sealed class GuidsController : ControllerBase
     {
         /// <summary>
         ///     GET ~/guid

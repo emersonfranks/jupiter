@@ -3,15 +3,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace DeveloperTools.Api
+namespace Jupiter.Api
 {
     /// <summary>
     ///     Encapsulates the app start up process.
     /// </summary>
-    public class Startup
+    public sealed class Startup
     {
         /// <summary>
         ///     Starts the app.

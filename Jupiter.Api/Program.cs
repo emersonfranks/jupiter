@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace DeveloperTools.Api
+namespace Jupiter.Api
 {
-    public class Program
+    public sealed class Program
     {
         public static void Main(string[] args)
         {

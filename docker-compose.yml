@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  developertools.api:
-    image: ${DOCKER_REGISTRY}developertoolsapi
+  jupiter.api:
+    image: ${DOCKER_REGISTRY}jupiterapi
     build:
       context: .
-      dockerfile: DeveloperTools.Api/Dockerfile
+      dockerfile: Jupiter.Api/Dockerfile

@@ -1,14 +1,14 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DeveloperTools.Api.Controllers
+namespace Jupiter.Api.Controllers
 {
     /// <summary>
     ///     All things about dates.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    public class DatesController : ControllerBase
+    public sealed class DatesController : ControllerBase
     {
         /// <summary>
         ///     GET ~/date/day/number
@@ -28,7 +28,7 @@ namespace DeveloperTools.Api.Controllers
         /// <returns>The day number.</returns>
         [Route("Day/Number/{dateTime}")]
         [HttpGet]
-        public IActionResult Get(DateTime dateTime)
+        public IActionResult GetDayNumberFromDateTime(DateTime dateTime)
         {
             return this.Ok(dateTime.DayOfYear);
         }
