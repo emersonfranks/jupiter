@@ -43,7 +43,7 @@ namespace Jupiter.Api.Tests.Controllers
             // Arrange.
             var dependencies = new Dependencies();
             var controller = dependencies.Create();
-            var dateTime = DateTime.UtcNow;
+            var dateTime = fixture.Create<DateTime>();
 
             // Act.
             OkObjectResult Request() => controller.GetDayNumberFromDateTime(dateTime) as OkObjectResult;
@@ -58,7 +58,7 @@ namespace Jupiter.Api.Tests.Controllers
             // Arrange.
             var dependencies = new Dependencies();
             var controller = dependencies.Create();
-            var dateTime = DateTime.UtcNow;
+            var dateTime = fixture.Create<DateTime>();
 
             // Act.
             OkObjectResult Request() => controller.GetDayNumberFromDateTime(dateTime) as OkObjectResult;
@@ -68,12 +68,11 @@ namespace Jupiter.Api.Tests.Controllers
         }
 
         [Test]
-        public void GetUtcDateTime_WhenRequestValide_Returns200()
+        public void GetUtcDateTime_WhenRequestValid_Returns200()
         {
             // Arrange.
             var dependencies = new Dependencies();
             var controller = dependencies.Create();
-            var dateTime = DateTime.UtcNow;
 
             // Act.
             OkObjectResult Request() => controller.GetUtcDateTime() as OkObjectResult;
