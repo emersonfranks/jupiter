@@ -34,9 +34,9 @@ namespace Jupiter.Api
             {
                 c.SwaggerDoc("v1", new Info
                 {
-                    Title = "Developer Tools",
+                    Title = "Jupiter",
                     Version = "v1",
-                    Description = "Just some tools that I seem to always need.",
+                    Description = "A conglomeration of things that I seem to need from time to time.",
                     Contact = new Contact
                     {
                         Email = "franks.emerson@gmail.com",
@@ -61,7 +61,7 @@ namespace Jupiter.Api
 
             app.UseSwagger();
 
-            app.UseSwaggerUI(so => so.SwaggerEndpoint("/swagger/v1/swagger.json", "Developer Tools v1"));
+            app.UseSwaggerUI(so => so.SwaggerEndpoint("/swagger/v1/swagger.json", "Jupiter v1"));
 
             app.UseMvc();
         }
