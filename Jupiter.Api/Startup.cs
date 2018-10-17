@@ -21,6 +21,9 @@ namespace Jupiter.Api
             Configuration = configuration;
         }
 
+        /// <summary>
+        ///     The configuration.
+        /// </summary>
         public IConfiguration Configuration { get; }
 
         /// <summary>
